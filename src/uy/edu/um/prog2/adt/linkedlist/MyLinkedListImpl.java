@@ -1,14 +1,12 @@
 package uy.edu.um.prog2.adt.linkedlist;
 
-import lombok.Getter;
-import uy.edu.um.tad.queue.EmptyQueueException;
-import uy.edu.um.tad.queue.MyQueue;
-import uy.edu.um.tad.stack.EmptyStackException;
-import uy.edu.um.tad.stack.MyStack;
+import uy.edu.um.prog2.adt.queue.MyQueue;
+import uy.edu.um.prog2.adt.stack.MyStack;
+import uy.edu.um.prog2.exceptions.EmptyQueueException;
+import uy.edu.um.prog2.exceptions.EmptyStackException;
 
 public class MyLinkedListImpl<T> implements MyList<T>, MyQueue<T>, MyStack<T> {
 
-    @Getter
     private Node<T> first;
 
     private Node<T> last;
@@ -17,7 +15,6 @@ public class MyLinkedListImpl<T> implements MyList<T>, MyQueue<T>, MyStack<T> {
         this.first = null;
         this.last = null;
     }
-
 
     @Override
     public void add(T value) {
@@ -89,6 +86,10 @@ public class MyLinkedListImpl<T> implements MyList<T>, MyQueue<T>, MyStack<T> {
         }
 
         return valueToReturn;
+    }
+
+    public Node<T> getFirst() {
+        return this.first;
     }
 
     public boolean contains(T value) {
