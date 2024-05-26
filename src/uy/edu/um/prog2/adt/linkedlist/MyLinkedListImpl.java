@@ -1,4 +1,4 @@
-package uy.edu.um.tad.linkedlist;
+package uy.edu.um.prog2.adt.linkedlist;
 
 import lombok.Getter;
 import uy.edu.um.tad.queue.EmptyQueueException;

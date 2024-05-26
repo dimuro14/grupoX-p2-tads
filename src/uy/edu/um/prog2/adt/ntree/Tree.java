@@ -1,7 +1,7 @@
 /**
  * 
  */
-package uy.edu.um.adt.ntree;
+package uy.edu.um.prog2.adt.ntree;
 
 /**
  * @author danielpereda
