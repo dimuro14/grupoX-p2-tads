@@ -63,6 +63,14 @@ public class SearchBinaryTreeImpl<T extends Comparable<T>> implements
 
 	public void remove(T oElement) {
 
+		if (root.getLeft() == null && root.getRight() == null) {
+
+			root = null;
+
+			return;
+
+		}
+
 		if (root != null) {
 
 			root.remove(oElement);
